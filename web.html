@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Quiz Website</h1>
+    </header>
+    <nav>
+        <select id="categoryDropdown">
+            <option value="math">Math</option>
+            <option value="science">Science</option>
+            <option value="history">History</option>
+        </select>
+        <input type="text" id="searchBar" placeholder="Search for quizzes">
+        <button id="voiceSearchBtn">Voice Search</button>
+    </nav>
+    <main>
+        <div id="tabs">
+            <button class="tab" data-difficulty="easy">Easy</button>
+            <button class="tab" data-difficulty="medium">Medium</button>
+            <button class="tab" data-difficulty="hard">Hard</button>
+        </div>
+        <div id="quizContainer"></div>
+        <div id="calculatorContainer">
+            <input type="text" id="calculatorDisplay" disabled>
+            <div id="calculatorButtons">
+                <!-- Calculator buttons go here -->
+            </div>
+        </div>
+        <div id="progressBarContainer">
+            <div id="progressBar"></div>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
